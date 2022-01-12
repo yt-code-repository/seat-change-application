@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+.container {
+	width: 80%;
+	margin: auto;
+}
+
+.flex_space-around {
+	display: flex;
+	justify-content: space-around;
+}
+
+.flex_center {
+	display: flex;
+	justify-content: center;
+}
+
+h1 {
+	font-size: 1.5rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+.teacher_platform {
+    display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.platform {
+	text-align: center;
+	height: 2.2rem;
+	line-height: 2.2rem;
+	margin: 0 0.8rem 0 0.8rem;
+	background-color: #FFD700;
+	border: solid 0.05rem #AA9200;
+}
+
+.platform > p{
+	margin: 0;
+	height: 100%;
+    width: 10%;
+    vertical-align: middle;
+}
+
+.seats {
+    display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.seat {
+	text-align: center;
+	height: 2.2rem;
+	line-height: 2.2rem;
+	margin: 0.8rem;
+}
+
+.front {
+	background-color: #EEAAAA;
+	border: solid 0.05rem #AA7777;
+}
+
+.middle {
+	background-color: #FFCCCC;
+	border: solid 0.05rem #AA7777;
+}
+
+.back {
+	background-color: #FFEEEE;
+	border: solid 0.05rem #AA7777;
+}
+
+.seat > p{
+	margin: 0;
+	height: 100%;
+    width: 20%;
+    vertical-align: middle;
+}
+
+.seat_cms {
+	text-align: center;
+	height: 2.2rem;
+	line-height: 2.2rem;
+	margin: 0.8rem;
+	background-color: #FFCCCC;
+	border: solid 0.05rem #AA7777;
+}
+
+.seat_cms > p{
+	margin: 0;
+	height: 100%;
+    width: 25%;
+    vertical-align: middle;
+    font-size: 0.7rem;
+}
+
+img {
+	height: 30px;
+	vertical-align: middle;
+}
+
+
+
+

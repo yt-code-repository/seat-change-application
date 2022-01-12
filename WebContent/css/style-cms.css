@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+.container {
+	width: 80%;
+	margin: auto;
+}
+
+.flex_space-around {
+	display: flex;
+	justify-content: space-around;
+}
+
+.flex_center {
+	display: flex;
+	justify-content: center;
+}
+
+h2 {
+	font-size: 1.5rem;
+	padding: 5%;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+.division {
+    display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+/* .teacher_platform { */
+/*     display: grid; */
+/* 	grid-template-columns: repeat(2, 1fr); */
+/* } */
+
+/* .platform { */
+/* 	text-align: center; */
+/* 	height: 2.2rem; */
+/* 	line-height: 2.2rem; */
+/* 	margin: 0 0.8rem 0 0.8rem; */
+/* 	background-color: #FFD700; */
+/* 	border: solid 0.05rem #AA9200; */
+/* } */
+
+/* .platform > p{ */
+/* 	margin: 0; */
+/* 	height: 100%; */
+/*     width: 10%; */
+/*     vertical-align: middle; */
+/* } */
+
+.members {
+    display: grid;
+	grid-template-columns: repeat(1, 1fr);
+}
+
+.holidays {
+    display: grid;
+	grid-template-columns: repeat(1, 1fr);
+}
+
+.seat {
+	text-align: center;
+	height: 2.2rem;
+	line-height: 2.2rem;
+	margin: 0.8rem;
+	background-color: #FFCCCC;
+	border: solid 0.05rem #AA7777;
+}
+
+.seat > p{
+	margin: 0;
+	height: 100%;
+    width: 20%;
+    vertical-align: middle;
+}
+
+.seat_cms {
+	text-align: center;
+	height: 2.2rem;
+	line-height: 2.2rem;
+	margin: 0.8rem;
+	background-color: #FFCCCC;
+	border: solid 0.05rem #AA7777;
+}
+
+.seat_cms > p{
+	margin: 0;
+	height: 100%;
+    width: 30%;
+    vertical-align: middle;
+    font-size: 1.0rem;
+}
+
+.flex-item1 {
+flex-grow: 1; /* flexコンテナ内の余白の分配比率を指定 */
+}
+
+img {
+	height: 30px;
+	vertical-align: middle;
+}
+
+.opbtns {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	padding: 20px 0;
+}
+
+.opbtns_item {
+	display: block;
+	height: 30px;
+	width: 25%;
+    background-color: #8ecccc;
+    border: #ccc 1px solid;
+	font-size: 1.2rem;
+	margin-right: 20px;
+    text-align: center;
+}
+.opbtns_item:last-child {
+	margin-right: 0;
+}
+
+.opbtns_item a {
+	display: block;
+	line-height: 30px;
+    text-decoration: none;
+}
+
+.entryForm th, td {
+	text-align: right;
+}
