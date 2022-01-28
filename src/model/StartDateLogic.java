@@ -19,6 +19,7 @@ public class StartDateLogic {
 
 		// カレンダー日付代入
 		Calendar cal = Calendar.getInstance();
+
 		// 今年の年数取得
 		int current_year = cal.get(Calendar.YEAR);
 
@@ -26,6 +27,10 @@ public class StartDateLogic {
 		int day_of_week = cal.get(Calendar.DAY_OF_WEEK);
 
 		// 曜日によって、来週の月曜日になるようにスタートする日を変える
+		// 日曜日
+		if(day_of_week == 1) {cal.add(Calendar.DATE, 8);}
+		// 月曜日
+		if(day_of_week == 2) {cal.add(Calendar.DATE, 7);}
 		// 火曜日
 		if(day_of_week == 3) {cal.add(Calendar.DATE, 6);}
 		// 水曜日
@@ -36,10 +41,6 @@ public class StartDateLogic {
 		if(day_of_week == 6) {cal.add(Calendar.DATE, 3);}
 		// 土曜日
 		if(day_of_week == 7) {cal.add(Calendar.DATE, 2);}
-		// 日曜日
-		if(day_of_week == 1) {cal.add(Calendar.DATE, 1);}
-		// 月曜日
-		if(day_of_week == 2) {cal.add(Calendar.DATE, 0);}
 
 		// すべての祝日のデータを holidayList として取得
 		List<Holiday> holidayList = HolidayList.getHolidayList();
