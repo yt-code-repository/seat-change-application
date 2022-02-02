@@ -173,7 +173,7 @@ String loginUser_name = (String) session.getAttribute("loginUser_name");
 
 
 
-				<div class="seat_cms flex_space-around">
+				<div class="member_cms flex_space-around">
 					<p>出席番号</p>
 					<p>名前</p>
 					<p>在籍状況</p>
@@ -184,16 +184,14 @@ String loginUser_name = (String) session.getAttribute("loginUser_name");
 				<%
 				for (int i = 0; i < number_of_member; i++) {
 				%>
-					<div class="seat_cms flex_space-around">
-						<p>
-							<input type="hidden" name="member_id" value="<%= i+1 %>">
-							<input type="hidden" name="seat_id" value="<%= i+1 %>">
-						</p>
+					<div class="member_cms flex_space-around">
+						<input type="hidden" name="member_id" value="<%= i+1 %>">
+						<input type="hidden" name="seat_id" value="<%= i+1 %>">
 						<p>
 							<%= i+1 %>
 						</p>
 						<p>
-							<input type="text" name="name" value="" size="20">
+							<input type="text" name="name" value="" size="15">
 						</p>
 						<p>
 							<select name="enrolled">
@@ -241,7 +239,7 @@ String loginUser_name = (String) session.getAttribute("loginUser_name");
 				int[] position_request_s = (int[]) request.getAttribute("position_request_s");
 			%>
 
-				<div class="seat_cms flex_space-around">
+				<div class="member_cms flex_space-around">
 					<p>出席番号</p>
 					<p>名前</p>
 					<p>在籍状況</p>
@@ -252,16 +250,14 @@ String loginUser_name = (String) session.getAttribute("loginUser_name");
 				<%
 				for (int i = 0; i<members.length; i++) {
 				%>
-					<div class="seat_cms flex_space-around">
-						<p>
-							<input type="hidden" name="member_id" value="<%= id_s[i] %>">
-							<input type="hidden" name="seat_id" value="<%= seat_id_s[i] %>">
-						</p>
+					<div class="member_cms flex_space-around">
+						<input type="hidden" name="member_id" value="<%= id_s[i] %>">
+						<input type="hidden" name="seat_id" value="<%= seat_id_s[i] %>">
 						<p>
 							<%= i+1 %>
 						</p>
 						<p>
-							<input type="text" name="name" value="<%= members[i] %>" size="20">
+							<input type="text" name="name" value="<%= members[i] %>" size="15">
 						</p>
 						<p>
 							<select name="enrolled">

@@ -280,7 +280,7 @@ String loginUser_name = (String) session.getAttribute("loginUser_name");
 			int current_year = (int) request.getAttribute("current_year");
 			%>
 
-				<div class="seat_cms flex_space-around">
+				<div class="holiday_cms flex_space-around">
 					<p>id</p>
 					<p>名前</p>
 					<p>日付</p>
@@ -290,10 +290,8 @@ String loginUser_name = (String) session.getAttribute("loginUser_name");
 				for (int i = 0; i < number_of_registrations; i++) {
 				%>
 					<% if (i <names.length) { %>
-						<div class="seat_cms flex_space-around">
-							<p>
-								<input type="hidden" name="holiday_id" value="<%= i+1 %>">
-							</p>
+						<div class="holiday_cms flex_space-around">
+							<input type="hidden" name="holiday_id" value="<%= i+1 %>">
 							<p>
 								<%= i+1 %>
 							</p>
@@ -362,10 +360,8 @@ String loginUser_name = (String) session.getAttribute("loginUser_name");
 						</div>
 
 					<% } else { %>
-						<div class="seat_cms flex_space-around">
-							<p>
-								<input type="hidden" name="holiday_id" value="<%= i+1 %>">
-							</p>
+						<div class="holiday_cms flex_space-around">
+							<input type="hidden" name="holiday_id" value="<%= i+1 %>">
 							<p>
 								<%= i+1 %>
 							</p>

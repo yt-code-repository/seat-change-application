@@ -93,6 +93,44 @@ h3 {
     font-size: 1.0rem;
 }
 
+.member_cms {
+	text-align: center;
+	height: 2.2rem;
+	line-height: 2.2rem;
+	margin: 0.8rem;
+	background-color: #FFCCCC;
+	border: solid 0.05rem #AA7777;
+}
+
+.member_cms > p{
+	margin: 0;
+	height: 100%;
+    width: 20%;
+    vertical-align: middle;
+    font-size: 1.0rem;
+}
+
+.holiday_cms {
+	text-align: center;
+	height: 2.2rem;
+	line-height: 2.2rem;
+	margin: 0.8rem;
+	background-color: #FFCCCC;
+	border: solid 0.05rem #AA7777;
+}
+
+.holiday_cms > p{
+	margin: 0;
+	height: 100%;
+    width: 30%;
+    vertical-align: middle;
+    font-size: 1.0rem;
+}
+
+.holiday_cms p:last-child{
+    width: 50%;
+}
+
 .flex-item1 {
 flex-grow: 1; /* flexコンテナ内の余白の分配比率を指定 */
 }
